@@ -33,6 +33,7 @@ const families = {
     <div class="wrap narrow">
       <p>Families arrive at behaviour support tired, and usually a bit wary. Often they have had a plan written before by someone who visited twice, and the plan is in a drawer. Sometimes they have been told the behaviour is a phase, or that it is their fault, or both in the same week.</p>
       <p>So before anything else: what is happening in your house makes sense. Behaviour that looks irrational from the outside is almost always doing a job for the person doing it. Once we know what the job is, there is usually something to be done about it.</p>
+      <p>And if you are reading this for yourself rather than for someone else, you are just as welcome here. You can contact me directly, and the conversation starts with what you want, not with what someone else has written about you.</p>
 
       <h2>What I will actually do</h2>
       <ul class="ticks">
@@ -110,7 +111,7 @@ const coords = {
     <div class="wrap">
       <div class="grid g4">
         ${card({ icon: I.clock, title: 'Capacity, published', body: `<p>${SITE.capacity}, one to two new referrals per month. The notice at the top of every page is kept current.</p>` })}
-        ${card({ icon: I.mail, iconTone: 'sage', title: 'Response time', body: '<p>Two business days, every time. For urgent restrictive practice situations, call and say so.</p>' })}
+        ${card({ icon: I.mail, iconTone: 'sage', title: 'Response time', body: '<p>Two business days, every time. If something is urgent, call and say so.</p>' })}
         ${card({ icon: I.shield, iconTone: 'gold', title: 'All management types', body: '<p>Behaviour support: agency, plan and self-managed. Other supports: plan and self-managed.</p>' })}
         ${card({ icon: I.doc, iconTone: 'peach', title: 'One practitioner', body: '<p>The person who does the assessment writes the plan and trains the team. No handovers, no juniors.</p>' })}
       </div>
@@ -202,6 +203,7 @@ const about = {
             <li>I come to you. Home, school, kindy, day program, aged care, or out in the community, wherever the skills are needed and the behaviour actually happens.</li>
             <li>Face-to-face first, then telehealth. Heavy travel up front for assessment, rapport and training. Then I shift towards telehealth with less frequent visits, so the funding stretches further and more of the team gets supported.</li>
             <li>I train the people around the person. A plan nobody has been shown how to use is just paper.</li>
+            <li>I bring specialist behaviour knowledge, not all the answers. The person, their family and their support team know things I cannot know from my training alone. I listen, learn and combine that knowledge with assessment, observation and behaviour science to understand what is happening, what matters, and what we can build from there.</li>
             <li>I tell you what I think, including when I think the funding is not enough, the plan is the wrong plan, or someone else would serve you better.</li>
           </ul>
         </div>
@@ -248,7 +250,7 @@ const gympieFaqs = [
   { q: 'Do you go out to Tin Can Bay, Rainbow Beach and the Mary Valley?',
     a: `<p>Yes. Tin Can Bay, Cooloola Cove and Rainbow Beach to the north-east, and Imbil, Kandanga, Amamoor and Widgee through the Mary Valley. Kilkivan, Goomeri and Murgon to the west. Beyond Murgon is genuinely too far for me to do it well.</p>` },
   { q: 'Can you work with Gympie schools?',
-    a: `<p>Yes, with consent and the school&rsquo;s agreement. Behaviour that shows up at school and behaviour that shows up at home are usually the same behaviour, and a plan that only covers one setting tends not to hold. I train school and early learning staff as part of the work.</p>` },
+    a: `<p>Yes, with consent and the school&rsquo;s agreement. I do not come into a school assuming I have all the answers. I value the knowledge of the people who know the child, and work collaboratively with families and education teams to understand what is happening in each setting. Together, we build practical supports that make sense for the child and the people around them.</p>` },
   { q: 'How long is the wait for a Gympie participant?',
     a: `<p>${SITE.capacity}, at one to two new referrals per month. Because the Gympie run is a fixed day in my week, a Gympie referral does not wait longer than a Sunshine Coast one.</p>` },
   { q: 'Where do I go for help with my NDIS plan itself in Gympie?',
@@ -307,7 +309,7 @@ const gympie = {
         <div>
           <p class="kicker">Coverage</p>
           <h2>Towns and suburbs I get to</h2>
-          <p>If a town is on this list, I have either worked there or I can get there sustainably. If yours is not, ask. You will get a straight answer, and sometimes that answer is no.</p>
+          <p>If a town is on this list, I can get there sustainably and keep getting there. If yours is not, ask. You will get a straight answer, and sometimes that answer is no.</p>
           <p class="small muted">Gympie sits in the Gympie Regional Council area, and covers a lot of ground: the Cooloola coast to the north-east, the Mary Valley to the south, and farming country west towards the South Burnett.</p>
           <p style="margin-top:20px">${btn('contact.html', 'Ask about your town', 'btn-ghost', true)}</p>
         </div>
@@ -332,7 +334,7 @@ const gympie = {
       <div class="sec-head"><h2>Why a local practitioner is worth holding out for</h2></div>
       <div class="grid g2">
         ${card({ icon: I.pin, title: 'The drive is not a favour', body: '<p>When a provider treats regional visits as an exception, reviews get postponed and plans go stale. A fixed weekly day changes that.</p>' })}
-        ${card({ icon: I.people, iconTone: 'sage', title: 'I know the settings', body: '<p>Schools, early learning centres and day programs in this region, and how they actually run, which matters when a plan has to work inside one.</p>' })}
+        ${card({ icon: I.people, iconTone: 'sage', title: 'I come into your settings', body: '<p>Home, classroom, early learning centre or day program. I work inside the places support actually has to hold together, alongside the people who already know the person well.</p>' })}
         ${card({ icon: I.clock, iconTone: 'gold', title: 'Less funding spent on travel', body: '<p>Grouped visits and a deliberate move to telehealth once things are established means more of the budget reaches the support itself.</p>' })}
         ${card({ icon: I.heart, iconTone: 'peach', title: 'You get the same person', body: '<p>No allocation to whoever has availability. The person who assesses is the person who writes the plan and trains the team.</p>' })}
       </div>
@@ -375,7 +377,7 @@ const contact = {
           <div class="card" style="margin-bottom:22px">
             <div class="icon">${I.phone}</div>
             <h3>Call or text</h3>
-            <p>Quickest option, and the right one if there is an urgent restrictive practice situation.</p>
+            <p>Quickest option, and the right one if something is urgent. Tell me it is urgent and I will treat it that way.</p>
             <p><a class="btn btn-ghost btn-sm" href="tel:${SITE.phoneHref}">${SITE.phone}</a></p>
           </div>
           <div class="card" style="margin-bottom:22px">

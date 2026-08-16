@@ -41,6 +41,7 @@ const NAV = [
     { href: 'early-childhood-early-intervention.html', label: 'Early Childhood', note: 'Under 9s and their families' },
     { href: 'improved-daily-living.html', label: 'Improved Daily Living', note: 'Skill building across the lifespan' },
     { href: 'assessments-and-reports.html', label: 'Assessments & Reports', note: 'Evidence for plan reviews' },
+    { href: 'training-and-consultancy.html', label: 'Consultancy & Training', note: 'Schools, services and private clients' },
   ]},
   { label: 'Info for', children: [
     { href: 'for-families.html', label: 'Families & participants', note: 'What support actually looks like' },
@@ -174,6 +175,7 @@ function enquiryForm(compact = false) {
               <option>Self-managed</option>
               <option>Plan-managed</option>
               <option>NDIA (agency) managed</option>
+              <option>Privately funded, not through the NDIS</option>
               <option>No NDIS plan yet</option>
               <option>Not sure</option>
             </select>
@@ -330,6 +332,7 @@ ${body}
           <li><a href="early-childhood-early-intervention.html">Early Childhood</a></li>
           <li><a href="improved-daily-living.html">Improved Daily Living</a></li>
           <li><a href="assessments-and-reports.html">Assessments &amp; Reports</a></li>
+          <li><a href="training-and-consultancy.html">Consultancy &amp; Training</a></li>
         </ul>
       </div>
       <div>

@@ -86,7 +86,7 @@ const home = {
       <div class="sec-head">
         <p class="kicker">The approach</p>
         <h2>We do not start with the behaviour. We start with the person.</h2>
-        <p class="lede">My work is grounded in the constructional approach, a way of doing behaviour support that asks what someone is building towards instead of cataloguing what is going wrong. It changes what gets measured, what goes in the plan, and what the team is asked to do on a Tuesday afternoon.</p>
+        <p class="lede">My work is grounded in the constructional approach, a way of doing behaviour support that asks what someone is building towards instead of cataloguing what is going wrong. It changes the questions we ask, the goals we set, and ultimately what support looks like in everyday life.</p>
       </div>
       <div class="grid g4">
         ${card({ icon: I.compass, iconTone: 'sage', title: 'Where you want to go', body: '<p>What does a good week look like for this person? Something their family would recognise, described in ordinary words, and not the sort of goal that only exists to fill a report.</p>' })}
@@ -101,8 +101,8 @@ const home = {
     <div class="wrap">
       <div class="sec-head center">
         <p class="kicker">Services</p>
-        <h2>Three funding lines, one practitioner</h2>
-        <p class="lede">Behaviour support is the core of my practice. Early childhood and daily living supports sit alongside it, and they are often the way in when a family knows something is not working but has no behaviour support funding yet.</p>
+        <h2>Three areas, one approach</h2>
+        <p class="lede">Behaviour support is the core of my practice, alongside early childhood and daily living supports. While the focus of support may differ, the approach stays the same: understanding what matters and building towards a life that feels meaningful.</p>
       </div>
       <div class="grid g3">
         ${card({ icon: I.shield, title: 'Specialist Behaviour Support', href: 'specialist-behaviour-support.html', more: 'How it works',
@@ -113,6 +113,7 @@ const home = {
           body: '<p>Building the skills that make a life bigger: communication, independence, routines, work and community participation, across the lifespan.</p><p class="small muted">Funded from Improved Daily Living (Capacity Building)</p>' })}
       </div>
       <p class="center small muted" style="margin-top:26px">Not sure which one you have funding for? <a href="ndis-funding.html">Here is how to read your plan</a>, or send it to me and I will tell you what I can see.</p>
+      <p class="center small muted" style="margin-top:8px">Outside the NDIS, I also take privately funded work and <a href="training-and-consultancy.html">consultancy and training for schools and services</a>.</p>
     </div>
   </section>
 

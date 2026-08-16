@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.vercel
+*.log
+
+# Internal notes — contains Amy's NDIS practitioner ID and competitor research.
+# Keep out of the public repo.
+READ-ME-FIRST.md
+
+# Unused source artwork
+assets/logo-full-card.png

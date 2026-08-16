@@ -55,9 +55,9 @@ const ec = {
         <p>It sharpened my appreciation for how different every child and every family is, and how little use advice is if it does not fit the life you are actually living. I will not hand you a plan that assumes you have unlimited time, two adults available and a child who sleeps.</p>
       </div>
 
-      <h2>A common path into behaviour support</h2>
-      <p>Quite often families come to me for early childhood support and, in the course of the work, it becomes clear that behaviour support funding would genuinely help. Where that is the case I can complete the assessment and write the report that evidences it for a plan review.</p>
-      <p>That is a real and legitimate route. The NDIA wants evidence of need, and a report from a practitioner who has actually observed your child is the strongest form of it. <a href="assessments-and-reports.html">More about assessments and reports &rarr;</a></p>
+      <h2>When behaviour support would help too</h2>
+      <p>Sometimes, part-way through early childhood work, it becomes clear that a child would benefit from specialist behaviour support as well. Where that happens I will tell you plainly.</p>
+      <p>Assessment and reporting are part of the support you are already funded for, so I can describe what I have observed in writing for you to take to your next plan review. What the NDIA decides from there is theirs to weigh up, but a description from someone who has watched your child in the settings that matter is far more useful to them than a general account. <a href="assessments-and-reports.html">More about assessments and reports &rarr;</a></p>
 
       ${AVAIL_NOTE}
     </div>
@@ -144,7 +144,7 @@ const asFaqs = [
   { q: 'How long does an assessment and report take?',
     a: `<p>It depends on how many settings and people are involved. I will give you a written estimate of hours before starting, so it can be checked against what is in the plan.</p>` },
   { q: 'Can you do this if we have no behaviour support funding yet?',
-    a: `<p>Yes, and that is exactly the situation this is for. The assessment can be funded from Improved Daily Living or early childhood supports, and the resulting report is what evidences the need for behaviour support funding at the next plan review.</p>` },
+    a: `<p>Often, yes. Assessment and reporting sit within therapy and capacity-building supports, so where your plan already funds those, the work can usually be done within it. I will tell you honestly at the start whether what you have will cover it.</p>` },
   { q: 'Do you review reports written by someone else?',
     a: `<p>Yes. Sometimes what you have is stronger than you think and simply needs framing differently for a plan review. Sometimes it genuinely will not do the job. Either way you will get a straight answer before you spend money.</p>` },
 ];
@@ -169,8 +169,8 @@ const assess = {
 
   <section>
     <div class="wrap narrow">
-      <p>One of the most common frustrations in this system: a family knows something is not working, but the plan has no behaviour support funding in it, and nobody will fund the assessment that would demonstrate it is needed.</p>
-      <p>There is a legitimate way through that. Assessment and report writing can be funded from Improved Daily Living or early childhood supports, and the resulting report becomes the evidence for behaviour support funding at the next plan review.</p>
+      <p>A common frustration in this system: a family knows something is not working, but there is nothing in writing that describes it clearly enough for anyone to act on.</p>
+      <p>Assessment and report writing are part of therapy and capacity-building supports, so where a plan already funds those, this work can usually be done within it. The report sets out what is actually happening, which is what a plan review needs in front of it.</p>
 
       <h2>What I can provide</h2>
       <ul class="ticks">
@@ -245,7 +245,7 @@ const fund = {
       <h2>What if there is no behaviour support funding in the plan?</h2>
       <p>This is extremely common, and it is not a dead end. The usual route:</p>
       <div class="steps" style="margin-bottom:28px">
-        ${step({ title: 'Use another line to fund an assessment', body: '<p>Improved Daily Living or early childhood supports can generally fund a functional assessment and a report, which is the evidence of need.</p>' })}
+        ${step({ title: 'Get an assessment done within the funding you have', body: '<p>Assessment and report writing sit within therapy and capacity-building supports, so where a plan already funds those, the work can usually be done within it.</p>' })}
         ${step({ title: 'Get a report that names the need specifically', body: '<p>Vague reports get vague outcomes. The report needs to describe functional impact, what has been tried, and what is reasonable and necessary as a result. <a href="assessments-and-reports.html">More on that here.</a></p>' })}
         ${step({ title: 'Take it to a plan review', body: '<p>With evidence attached. This is what the NDIA is asking for when they ask for evidence, and a report from a practitioner who has observed the person carries real weight.</p>' })}
       </div>
@@ -279,4 +279,77 @@ const fund = {
   `,
 };
 
-module.exports = [ec, idl, assess, fund];
+/* ============================================================ CONSULTANCY & TRAINING */
+const consultFaqs = [
+  { q: 'Do we need to be an NDIS provider to engage you?',
+    a: `<p>No. This work sits outside the NDIS entirely. Schools, early learning centres, services and families can engage me directly, and it is invoiced to you rather than drawn from anyone&rsquo;s plan.</p>` },
+  { q: 'What does it cost?',
+    a: `<p>It depends on what is involved, so I quote it in writing before anything starts. You will know the scope and the cost before you commit to it.</p>` },
+  { q: 'Can you do a one-off session, or does it have to be ongoing?',
+    a: `<p>Both work. Sometimes a single conversation about one situation is genuinely all that is needed. Sometimes a team wants training and then a few follow-ups while they put it into practice. I would rather do the smaller piece well than sell you something larger.</p>` },
+  { q: 'Is there a waiting list for this?',
+    a: `<p>NDIS behaviour support is the priority in my week, so consultancy is fitted around it. Ask and I will tell you honestly what I can do and when.</p>` },
+];
+
+const consult = {
+  file: 'training-and-consultancy.html',
+  crumb: 'Consultancy & Training',
+  title: 'Behaviour Consultancy &amp; Training for Schools and Services | Gympie',
+  description: 'Privately funded behaviour consultancy and staff training for schools, early learning centres, services and families in Gympie, the Sunshine Coast and by telehealth. No NDIS plan required.',
+  schema: [faqSchema(consultFaqs)],
+  body: `
+  <section class="phero">
+    <div class="wrap">
+      <p class="kicker">Outside the NDIS &middot; Schools &middot; Services &middot; Private clients</p>
+      <h1>Consultancy and training</h1>
+      <p class="lede">Not every question about behaviour comes with a funding line attached. Schools, services and families sometimes want the expertise directly, without a plan, a package or a portal in the way.</p>
+      <div class="cta-row" style="margin-top:26px">
+        ${btn('contact.html', 'Ask about consultancy', 'btn-primary', true)}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap narrow">
+      <p>Most of my week is NDIS behaviour support, and that is where the practice is built. Alongside it I take a smaller amount of privately funded work, because the need is real and there is often nowhere obvious to take it.</p>
+      <p>A teacher who has one child they cannot reach. A service whose team keeps responding differently to the same situation. A parent with no NDIS plan and no intention of getting one, who just wants to understand what is going on.</p>
+
+      <h2>What this can look like</h2>
+      <ul class="ticks">
+        <li>Staff training on behaviour, communication and what to do when a situation escalates, pitched at the people who will actually be in the room.</li>
+        <li>Consultation on a specific situation, where a team wants a second set of eyes and a clear formulation rather than a full plan.</li>
+        <li>Coaching for a team putting new strategies into practice, because the first fortnight is where most good ideas quietly die.</li>
+        <li>Support for families paying privately, whether or not the NDIS is part of the picture.</li>
+      </ul>
+
+      <div class="callout">
+        <h4>Who this suits</h4>
+        <p>Schools and early learning centres, disability and community services, day programs, and families outside the NDIS. If you are already an NDIS participant, the funded pathways on this site are almost certainly the better route, and I will point you there instead.</p>
+      </div>
+
+      <h2>How it works</h2>
+      <div class="steps" style="margin-bottom:28px">
+        ${step({ when: 'Within 2 business days', title: 'A conversation first', body: '<p>Tell me the situation. I will tell you whether I am the right person for it, and roughly what it would take.</p>' })}
+        ${step({ title: 'Scope and cost, in writing', body: '<p>What is included, how long it takes and what it costs, before anything begins. No open-ended engagements.</p>' })}
+        ${step({ title: 'The work itself', body: '<p>On site where that makes sense, by telehealth where it does not, and always with the people who will be carrying it afterwards.</p>' })}
+      </div>
+
+      <div class="callout warm">
+        <h4>An honest note on capacity</h4>
+        <p>NDIS behaviour support comes first in my week. Consultancy is fitted around it, which means I can be genuinely useful but I cannot always be immediate. Ask, and you will get a straight answer about timing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mint">
+    <div class="wrap narrow">
+      <div class="sec-head"><h2>Questions about consultancy</h2></div>
+      ${faq(consultFaqs)}
+    </div>
+  </section>
+
+  ${ctaBand('Got a situation you want a second opinion on?', 'Tell me what is happening. If I am not the right person, I will say so.')}
+  `,
+};
+
+module.exports = [ec, idl, assess, fund, consult];

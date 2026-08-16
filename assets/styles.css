@@ -390,6 +390,7 @@ section{padding:clamp(52px,7vw,88px) 0}
   .routes{grid-template-columns:1fr}
 }
 @media (max-width:880px){
+  .hero{padding:26px 0 40px}
   .navtoggle{display:block}
   .nav{
     display:none; position:absolute; top:100%; left:0; right:0; background:var(--paper);
@@ -404,14 +405,25 @@ section{padding:clamp(52px,7vw,88px) 0}
   .head-cta .btn{display:none}
   .hero-grid{grid-template-columns:1fr}
   .hero-art{order:-1}
-  .hero-art img{width:min(78%,320px)}
-  .blob-peach{width:180px;height:180px} .blob-mint{width:150px;height:150px} .blob-gold{display:none}
+  .hero-art img{width:min(46%,190px)}
+  .blob-peach{width:118px;height:118px} .blob-mint{width:98px;height:98px} .blob-gold{display:none}
   .g3,.g2{grid-template-columns:1fr}
   .area-grid{grid-template-columns:1fr; gap:28px}
   .f2{grid-template-columns:1fr}
 }
 @media (max-width:560px){
   body{font-size:1.02rem}
+  /* Keep the primary call to action inside the first screen on phones */
+  .hero{padding:16px 0 32px}
+  .hero-art{margin-bottom:4px}
+  .hero-art img{width:142px}
+  .hero h1{font-size:1.92rem; margin-bottom:.3em}
+  .hero .lede{font-size:1.02rem; line-height:1.5}
+  .cred-line{gap:6px 8px; margin-bottom:16px}
+  .cred-line li{font-size:.755rem; padding:4px 10px}
+  .cta-row{gap:10px; margin-bottom:10px}
+  .blob-peach{width:92px;height:92px} .blob-mint{width:76px;height:76px}
+  .capacity .wrap > span:nth-child(2){display:none}
   .g4{grid-template-columns:1fr}
   .area-list{columns:1}
   .step{grid-template-columns:1fr; gap:12px}
