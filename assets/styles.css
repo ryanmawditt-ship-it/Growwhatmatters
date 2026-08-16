@@ -413,16 +413,24 @@ section{padding:clamp(52px,7vw,88px) 0}
 }
 @media (max-width:560px){
   body{font-size:1.02rem}
-  /* Keep the primary call to action inside the first screen on phones */
-  .hero{padding:16px 0 32px}
-  .hero-art{margin-bottom:4px}
-  .hero-art img{width:142px}
-  .hero h1{font-size:1.92rem; margin-bottom:.3em}
-  .hero .lede{font-size:1.02rem; line-height:1.5}
-  .cred-line{gap:6px 8px; margin-bottom:16px}
+  /* Keep the primary call to action inside the first screen on phones.
+     The credential pills move below the buttons: they build trust but they
+     do not need to be read before someone can act. */
+  .hero{padding:14px 0 30px}
+  .hero-art{margin-bottom:2px}
+  .hero-art img{width:110px}
+  .hero h1{font-size:1.88rem; margin-bottom:.3em}
+  .hero .lede{font-size:1.01rem; line-height:1.48; margin-bottom:.9em}
+  .hero .kicker{margin-bottom:.6em}
+  .hero-grid > div:first-of-type{display:flex; flex-direction:column}
+  .hero .kicker{order:1}
+  .hero h1{order:2}
+  .hero .lede{order:3}
+  .hero .cta-row{order:4; gap:10px; margin-bottom:10px}
+  .hero .reply-note{order:5}
+  .hero .cred-line{order:6; gap:6px 8px; margin:18px 0 0}
   .cred-line li{font-size:.755rem; padding:4px 10px}
-  .cta-row{gap:10px; margin-bottom:10px}
-  .blob-peach{width:92px;height:92px} .blob-mint{width:76px;height:76px}
+  .blob-peach{width:76px;height:76px} .blob-mint{width:64px;height:64px}
   .capacity .wrap > span:nth-child(2){display:none}
   .g4{grid-template-columns:1fr}
   .area-list{columns:1}
